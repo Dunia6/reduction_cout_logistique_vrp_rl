@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cvrp"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.0",
+    "numpy>=2.0",
+    "pandas>=3.0",
+    "tabulate>=0.9",
+    "vrplib>=2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
