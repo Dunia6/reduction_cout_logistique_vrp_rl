@@ -1,0 +1,902 @@
+[
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 42,
+    "cost": 1093.0,
+    "gap_percent": 39.41326530612245,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 42,
+    "cost": 916.0,
+    "gap_percent": 16.83673469387755,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 42,
+    "cost": 1096.0,
+    "gap_percent": 39.795918367346935,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 42,
+    "cost": 930.0,
+    "gap_percent": 18.622448979591837,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled",
+    "seed": 42,
+    "cost": 1050.0,
+    "gap_percent": 33.92857142857143,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 42,
+    "cost": 931.0,
+    "gap_percent": 18.75,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 43,
+    "cost": 1080.0,
+    "gap_percent": 37.755102040816325,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 43,
+    "cost": 928.0,
+    "gap_percent": 18.367346938775512,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 43,
+    "cost": 1056.0,
+    "gap_percent": 34.69387755102041,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 43,
+    "cost": 969.0,
+    "gap_percent": 23.596938775510203,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled",
+    "seed": 43,
+    "cost": 1034.0,
+    "gap_percent": 31.887755102040817,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 43,
+    "cost": 937.0,
+    "gap_percent": 19.51530612244898,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 44,
+    "cost": 1116.0,
+    "gap_percent": 42.3469387755102,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 44,
+    "cost": 916.0,
+    "gap_percent": 16.83673469387755,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 44,
+    "cost": 1113.0,
+    "gap_percent": 41.964285714285715,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 44,
+    "cost": 963.0,
+    "gap_percent": 22.831632653061224,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled",
+    "seed": 44,
+    "cost": 1052.0,
+    "gap_percent": 34.183673469387756,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 44,
+    "cost": 1015.0,
+    "gap_percent": 29.464285714285715,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 45,
+    "cost": 956.0,
+    "gap_percent": 21.93877551020408,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 45,
+    "cost": 955.0,
+    "gap_percent": 21.81122448979592,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 45,
+    "cost": 963.0,
+    "gap_percent": 22.831632653061224,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 45,
+    "cost": 942.0,
+    "gap_percent": 20.153061224489797,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled",
+    "seed": 45,
+    "cost": 959.0,
+    "gap_percent": 22.321428571428573,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 45,
+    "cost": 912.0,
+    "gap_percent": 16.3265306122449,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 46,
+    "cost": 1087.0,
+    "gap_percent": 38.64795918367347,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 46,
+    "cost": 925.0,
+    "gap_percent": 17.98469387755102,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 46,
+    "cost": 1062.0,
+    "gap_percent": 35.45918367346938,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 46,
+    "cost": 928.0,
+    "gap_percent": 18.367346938775512,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled",
+    "seed": 46,
+    "cost": 1037.0,
+    "gap_percent": 32.27040816326531,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n32-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 46,
+    "cost": 976.0,
+    "gap_percent": 24.489795918367346,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 42,
+    "cost": 1036.0,
+    "gap_percent": 54.85799701046338,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 42,
+    "cost": 907.0,
+    "gap_percent": 35.57548579970104,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 42,
+    "cost": 1041.0,
+    "gap_percent": 55.60538116591929,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 42,
+    "cost": 880.0,
+    "gap_percent": 31.53961136023916,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled",
+    "seed": 42,
+    "cost": 1013.0,
+    "gap_percent": 51.42002989536621,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 42,
+    "cost": 866.0,
+    "gap_percent": 29.446935724962632,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 43,
+    "cost": 1104.0,
+    "gap_percent": 65.02242152466367,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 43,
+    "cost": 957.0,
+    "gap_percent": 43.04932735426009,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 43,
+    "cost": 1084.0,
+    "gap_percent": 62.03288490284006,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 43,
+    "cost": 832.0,
+    "gap_percent": 24.364723467862483,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled",
+    "seed": 43,
+    "cost": 1076.0,
+    "gap_percent": 60.837070254110614,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 43,
+    "cost": 899.0,
+    "gap_percent": 34.379671150971596,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 44,
+    "cost": 1160.0,
+    "gap_percent": 73.39312406576981,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 44,
+    "cost": 935.0,
+    "gap_percent": 39.76083707025411,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 44,
+    "cost": 1112.0,
+    "gap_percent": 66.21823617339312,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 44,
+    "cost": 923.0,
+    "gap_percent": 37.96711509715994,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled",
+    "seed": 44,
+    "cost": 1063.0,
+    "gap_percent": 58.893871449925264,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 44,
+    "cost": 912.0,
+    "gap_percent": 36.32286995515695,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 45,
+    "cost": 1252.0,
+    "gap_percent": 87.14499252615845,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 45,
+    "cost": 825.0,
+    "gap_percent": 23.318385650224215,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 45,
+    "cost": 1113.0,
+    "gap_percent": 66.3677130044843,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 45,
+    "cost": 840.0,
+    "gap_percent": 25.56053811659193,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled",
+    "seed": 45,
+    "cost": 1084.0,
+    "gap_percent": 62.03288490284006,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 45,
+    "cost": 823.0,
+    "gap_percent": 23.019431988041852,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy",
+    "seed": 46,
+    "cost": 1134.0,
+    "gap_percent": 69.50672645739911,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 46,
+    "cost": 914.0,
+    "gap_percent": 36.62182361733931,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval",
+    "seed": 46,
+    "cost": 1088.0,
+    "gap_percent": 62.63079222720478,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 46,
+    "cost": 920.0,
+    "gap_percent": 37.5186846038864,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled",
+    "seed": 46,
+    "cost": 1038.0,
+    "gap_percent": 55.15695067264574,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n37-k5",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 46,
+    "cost": 869.0,
+    "gap_percent": 29.895366218236173,
+    "is_valid": true,
+    "routes_count": 5,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy",
+    "seed": 42,
+    "cost": 1255.0,
+    "gap_percent": 51.02286401925391,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 42,
+    "cost": 1068.0,
+    "gap_percent": 28.51985559566787,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval",
+    "seed": 42,
+    "cost": 1251.0,
+    "gap_percent": 50.54151624548736,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 42,
+    "cost": 1106.0,
+    "gap_percent": 33.092659446450064,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled",
+    "seed": 42,
+    "cost": 1250.0,
+    "gap_percent": 50.42117930204573,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 42,
+    "cost": 1070.0,
+    "gap_percent": 28.760529482551146,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy",
+    "seed": 43,
+    "cost": 1505.0,
+    "gap_percent": 81.10709987966305,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 43,
+    "cost": 1164.0,
+    "gap_percent": 40.07220216606498,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval",
+    "seed": 43,
+    "cost": 1500.0,
+    "gap_percent": 80.50541516245488,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 43,
+    "cost": 1179.0,
+    "gap_percent": 41.87725631768953,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled",
+    "seed": 43,
+    "cost": 1372.0,
+    "gap_percent": 65.1022864019254,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 43,
+    "cost": 1093.0,
+    "gap_percent": 31.528279181708786,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy",
+    "seed": 44,
+    "cost": 1348.0,
+    "gap_percent": 62.214199759326114,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 44,
+    "cost": 1213.0,
+    "gap_percent": 45.96871239470517,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval",
+    "seed": 44,
+    "cost": 1332.0,
+    "gap_percent": 60.28880866425993,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 44,
+    "cost": 1079.0,
+    "gap_percent": 29.843561973525873,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled",
+    "seed": 44,
+    "cost": 1265.0,
+    "gap_percent": 52.226233453670275,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 44,
+    "cost": 980.0,
+    "gap_percent": 17.930204572803852,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy",
+    "seed": 45,
+    "cost": 1203.0,
+    "gap_percent": 44.765342960288805,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 45,
+    "cost": 1042.0,
+    "gap_percent": 25.391095066185322,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval",
+    "seed": 45,
+    "cost": 1218.0,
+    "gap_percent": 46.57039711191336,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 45,
+    "cost": 1067.0,
+    "gap_percent": 28.399518652226234,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled",
+    "seed": 45,
+    "cost": 1251.0,
+    "gap_percent": 50.54151624548736,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 45,
+    "cost": 1145.0,
+    "gap_percent": 37.785800240673886,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy",
+    "seed": 46,
+    "cost": 1239.0,
+    "gap_percent": 49.09747292418773,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué en multi-greedy."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style multi-greedy + 2-opt",
+    "seed": 46,
+    "cost": 1107.0,
+    "gap_percent": 33.2129963898917,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style multi-greedy amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval",
+    "seed": 46,
+    "cost": 1196.0,
+    "gap_percent": 43.922984356197354,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style Active Search évalué par sampling (128 rollouts)."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style sampled eval + 2-opt",
+    "seed": 46,
+    "cost": 1035.0,
+    "gap_percent": 24.548736462093864,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "POMO-style sampled eval amélioré par 2-opt intra-route."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled",
+    "seed": 46,
+    "cost": 1154.0,
+    "gap_percent": 38.86883273164862,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution valide rencontrée pendant l'active search."
+  },
+  {
+    "instance": "A-n39-k6",
+    "method": "POMO-style best sampled + 2-opt",
+    "seed": 46,
+    "cost": 1080.0,
+    "gap_percent": 29.96389891696751,
+    "is_valid": true,
+    "routes_count": 6,
+    "notes": "Meilleure solution active search améliorée par 2-opt intra-route."
+  }
+]

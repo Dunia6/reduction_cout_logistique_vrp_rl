@@ -1,0 +1,46 @@
+instance,rank_by_cost,method,category,runs,cost_mean,cost_std,cost_min,cost_max,reference_cost,gap_mean,gap_std,valid_rate,train_time_mean,inference_time_mean,postprocess_time_mean,total_time_mean,episodes
+A-n32-k5,1.0,Clarke & Wright + 2-opt,heuristic_local_search,1,829.0,,829.0,829.0,784.0,5.74,,1.0,0.0,0.0029,0.0009,0.0038,
+A-n32-k5,2.0,Clarke & Wright Savings,heuristic_constructive,1,842.0,,842.0,842.0,784.0,7.4,,1.0,0.0,0.0029,0.0,0.0029,
+A-n32-k5,3.0,POMO-style multi-greedy + 2-opt,rl_main_local_search,5,928.0,16.02,916.0,955.0,784.0,18.37,2.04,1.0,725.6439,0.4008,0.0016,726.0463,500.0
+A-n32-k5,4.0,POMO-style sampled eval + 2-opt,rl_main_local_search,5,946.4,18.8,928.0,969.0,784.0,20.71,2.4,1.0,725.6439,7.6556,0.0019,733.3015,500.0
+A-n32-k5,5.0,POMO-style best sampled + 2-opt,rl_main_local_search,5,954.2,41.19,912.0,1015.0,784.0,21.71,5.25,1.0,725.6439,0.0,0.0024,725.6464,500.0
+A-n32-k5,6.0,POMO-style best sampled,rl_main,5,1026.4,38.49,959.0,1052.0,784.0,30.92,4.91,1.0,725.6439,0.0,0.0,725.6439,500.0
+A-n32-k5,7.0,POMO-style sampled eval,rl_main,5,1058.0,58.12,963.0,1113.0,784.0,34.95,7.41,1.0,725.6439,7.6556,0.0,733.2996,500.0
+A-n32-k5,8.0,POMO-style multi-greedy,rl_main,5,1066.4,63.18,956.0,1116.0,784.0,36.02,8.06,1.0,725.6439,0.4008,0.0,726.0448,500.0
+A-n32-k5,9.0,Nearest Neighbor + 2-opt,heuristic_local_search,1,1145.0,,1145.0,1145.0,784.0,46.05,,1.0,0.0,0.0007,0.0005,0.0012,
+A-n32-k5,9.0,Nearest Neighbor CVRP,heuristic_baseline,1,1145.0,,1145.0,1145.0,784.0,46.05,,1.0,0.0,0.0007,0.0,0.0007,
+A-n32-k5,10.0,Q-learning RL,rl_baseline,5,1241.4,95.98,1096.0,1344.0,784.0,58.34,12.24,1.0,6.2003,0.0058,0.0,6.2061,1000.0
+A-n37-k5,1.0,Clarke & Wright + 2-opt,heuristic_local_search,1,693.0,,693.0,693.0,,,,1.0,0.0,0.0046,0.0013,0.0058,
+A-n37-k5,2.0,Clarke & Wright Savings,heuristic_constructive,1,705.0,,705.0,705.0,,,,1.0,0.0,0.0046,0.0,0.0046,
+A-n37-k5,3.0,POMO-style best sampled + 2-opt,rl_main_local_search,5,873.8,34.49,823.0,912.0,669.0,30.61,5.16,1.0,833.6789,0.0,0.0133,833.6923,500.0
+A-n37-k5,4.0,POMO-style sampled eval + 2-opt,rl_main_local_search,5,879.0,42.86,832.0,923.0,669.0,31.39,6.41,1.0,833.6789,8.8375,0.0034,842.5198,500.0
+A-n37-k5,5.0,POMO-style multi-greedy + 2-opt,rl_main_local_search,5,907.6,50.14,825.0,957.0,669.0,35.67,7.49,1.0,833.6789,0.4663,0.0032,834.1484,500.0
+A-n37-k5,6.0,Nearest Neighbor + 2-opt,heuristic_local_search,1,927.0,,927.0,927.0,,,,1.0,0.0,0.0008,0.0021,0.0029,
+A-n37-k5,7.0,Nearest Neighbor CVRP,heuristic_baseline,1,948.0,,948.0,948.0,,,,1.0,0.0,0.0008,0.0,0.0008,
+A-n37-k5,8.0,Q-learning RL,rl_baseline,5,1019.2,57.01,946.0,1104.0,669.0,52.35,8.52,0.8,14.0658,0.0138,0.0,14.0796,1000.0
+A-n37-k5,9.0,POMO-style best sampled,rl_main,5,1054.8,29.15,1013.0,1084.0,669.0,57.67,4.36,1.0,833.6789,0.0,0.0,833.6789,500.0
+A-n37-k5,10.0,POMO-style sampled eval,rl_main,5,1087.6,29.26,1041.0,1113.0,669.0,62.57,4.37,1.0,833.6789,8.8375,0.0,842.5164,500.0
+A-n37-k5,11.0,POMO-style multi-greedy,rl_main,5,1137.2,79.14,1036.0,1252.0,669.0,69.99,11.83,1.0,833.6789,0.4663,0.0,834.1452,500.0
+A-n39-k6,1.0,Clarke & Wright + 2-opt,heuristic_local_search,1,855.0,,855.0,855.0,831.0,2.89,,1.0,0.0,0.0038,0.001,0.0048,
+A-n39-k6,2.0,Clarke & Wright Savings,heuristic_constructive,1,857.0,,857.0,857.0,831.0,3.13,,1.0,0.0,0.0038,0.0,0.0038,
+A-n39-k6,3.0,POMO-style best sampled + 2-opt,rl_main_local_search,5,1073.6,59.77,980.0,1145.0,831.0,29.19,7.19,1.0,911.5758,0.0,0.004,911.5798,500.0
+A-n39-k6,4.0,POMO-style sampled eval + 2-opt,rl_main_local_search,5,1093.2,54.32,1035.0,1179.0,831.0,31.55,6.54,1.0,911.5758,9.6599,0.0022,921.238,500.0
+A-n39-k6,5.0,Q-learning RL,rl_baseline,5,1117.2,79.27,1068.0,1256.0,831.0,34.44,9.54,0.4,10.0382,0.0057,0.0,10.0439,1000.0
+A-n39-k6,6.0,POMO-style multi-greedy + 2-opt,rl_main_local_search,5,1118.8,69.88,1042.0,1213.0,831.0,34.63,8.41,1.0,911.5758,0.5055,0.0018,912.083,500.0
+A-n39-k6,7.0,Nearest Neighbor + 2-opt,heuristic_local_search,1,1138.0,,1138.0,1138.0,831.0,36.94,,1.0,0.0,0.0004,0.0011,0.0015,
+A-n39-k6,8.0,Nearest Neighbor CVRP,heuristic_baseline,1,1145.0,,1145.0,1145.0,831.0,37.79,,1.0,0.0,0.0004,0.0,0.0004,
+A-n39-k6,9.0,POMO-style best sampled,rl_main,5,1258.4,77.42,1154.0,1372.0,831.0,51.43,9.32,1.0,911.5758,0.0,0.0,911.5758,500.0
+A-n39-k6,10.0,POMO-style sampled eval,rl_main,5,1299.4,123.45,1196.0,1500.0,831.0,56.37,14.86,1.0,911.5758,9.6599,0.0,921.2357,500.0
+A-n39-k6,11.0,POMO-style multi-greedy,rl_main,5,1310.0,121.43,1203.0,1505.0,831.0,57.64,14.61,1.0,911.5758,0.5055,0.0,912.0813,500.0
+A-n80-k10,1.0,Clarke & Wright + 2-opt,heuristic_local_search,1,1838.0,,1838.0,1838.0,,,,1.0,0.0,0.0267,0.002,0.0287,
+A-n80-k10,2.0,Clarke & Wright Savings,heuristic_constructive,1,1840.0,,1840.0,1840.0,,,,1.0,0.0,0.0267,0.0,0.0267,
+A-n80-k10,3.0,Nearest Neighbor + 2-opt,heuristic_local_search,1,2341.0,,2341.0,2341.0,,,,1.0,0.0,0.0038,0.0033,0.0071,
+A-n80-k10,4.0,Nearest Neighbor CVRP,heuristic_baseline,1,2348.0,,2348.0,2348.0,,,,1.0,0.0,0.0038,0.0,0.0038,
+B-n57-k7,1.0,Clarke & Wright + 2-opt,heuristic_local_search,1,1241.0,,1241.0,1241.0,,,,0.0,0.0,0.0153,0.0014,0.0168,
+B-n57-k7,2.0,Clarke & Wright Savings,heuristic_constructive,1,1242.0,,1242.0,1242.0,,,,0.0,0.0,0.0153,0.0,0.0153,
+B-n57-k7,3.0,Nearest Neighbor + 2-opt,heuristic_local_search,1,1788.0,,1788.0,1788.0,,,,0.0,0.0,0.0016,0.0035,0.0051,
+B-n57-k7,4.0,Nearest Neighbor CVRP,heuristic_baseline,1,1866.0,,1866.0,1866.0,,,,0.0,0.0,0.0016,0.0,0.0016,
+X-n101-k25,1.0,Clarke & Wright + 2-opt,heuristic_local_search,1,28936.0,,28936.0,28936.0,,,,0.0,0.0,0.0554,0.0012,0.0566,
+X-n101-k25,2.0,Clarke & Wright Savings,heuristic_constructive,1,28986.0,,28986.0,28986.0,,,,0.0,0.0,0.0554,0.0,0.0554,
+X-n101-k25,3.0,Nearest Neighbor + 2-opt,heuristic_local_search,1,41536.0,,41536.0,41536.0,,,,0.0,0.0,0.0026,0.0009,0.0035,
+X-n101-k25,4.0,Nearest Neighbor CVRP,heuristic_baseline,1,41944.0,,41944.0,41944.0,,,,0.0,0.0,0.0026,0.0,0.0026,

@@ -1,8 +1,0 @@
-instance,method,cost,reference_cost,gap_percent,routes,vehicle_reference,valid,time_seconds,errors
-A-n32-k5,Nearest Neighbor CVRP,1146.39,784,46.22,5,5,True,0.00045,
-A-n32-k5,Nearest Neighbor + 2-opt,1118.26,784,42.64,5,5,True,0.001138,
-A-n32-k5,Clarke & Wright Savings,843.69,784,7.61,5,5,True,0.00249,
-A-n32-k5,Clarke & Wright + 2-opt,830.67,784,5.95,5,5,True,0.001692,
-A-n32-k5,Q-learning RL,967.14,784,23.36,5,5,True,1.21966,
-A-n32-k5,Masked Policy RL,960.24,784,22.48,5,5,True,353.990848,
-A-n32-k5,Masked Policy RL + 2-opt,884.87,784,12.87,5,5,True,0.002397,

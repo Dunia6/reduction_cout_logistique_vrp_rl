@@ -1,0 +1,5 @@
+instance,best_method,best_category,best_cost,reference_cost,best_gap_percent,best_routes,vehicle_count,best_total_time_sec
+A-n32-k5,Clarke & Wright + 2-opt,heuristic_local_search,829.0,784.0,5.739795918367348,5,5,0.0037720000254921
+A-n37-k5,Clarke & Wright + 2-opt,heuristic_local_search,693.0,669.0,23.01943198804185,5,5,0.0058351999614387
+A-n39-k6,Clarke & Wright + 2-opt,heuristic_local_search,855.0,831.0,2.888086642599278,6,6,0.0047505999682471
+A-n80-k10,Clarke & Wright + 2-opt,heuristic_local_search,1838.0,,,10,10,0.0286969000007957

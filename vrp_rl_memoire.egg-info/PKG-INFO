@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: vrp-rl-memoire
+Version: 0.1.0
+Summary: CVRP heuristics and reinforcement learning experiments
+Requires-Python: >=3.12

@@ -1,147 +1,211 @@
-from __future__ import annotations
-
+import json
 import random
 from collections import defaultdict
-from typing import Any
+from pathlib import Path
+from typing import Dict, List, Tuple
 
-from cvrp.rl.cvrp_env import CVRPEnv
+
+State = Tuple[int, int, int, int]
+Action = int
 
 
 class QLearningAgent:
     """
-    Agent Q-learning tabulaire simplifié pour le CVRP.
+    Agent Q-learning tabulaire pour le CVRP.
 
-    L'agent apprend une valeur Q(state, action), où :
-    - state décrit la situation courante ;
-    - action est le prochain nœud à visiter ou le dépôt ;
-    - Q estime l'intérêt de choisir cette action dans cet état.
+    État utilisé :
+    - noeud courant ;
+    - capacité restante ;
+    - masque entier des clients visités ;
+    - nombre de routes déjà fermées.
+
+    Action :
+    - choisir le prochain noeud à visiter ;
+    - le dépôt est aussi une action lorsqu'un retour au dépôt est valide.
+
+    Cet agent sert de baseline RL simple. Il n'est pas censé être aussi performant
+    qu'un modèle neuronal moderne comme POMO, mais il permet de comparer une
+    approche RL basique à des heuristiques classiques.
     """
 
     def __init__(
         self,
         learning_rate: float = 0.1,
-        discount_factor: float = 0.95,
+        gamma: float = 0.95,
         epsilon: float = 1.0,
         epsilon_min: float = 0.05,
         epsilon_decay: float = 0.995,
+        seed: int | None = None,
     ):
         self.learning_rate = learning_rate
-        self.discount_factor = discount_factor
+        self.gamma = gamma
 
         self.epsilon = epsilon
+        self.epsilon_start = epsilon
         self.epsilon_min = epsilon_min
         self.epsilon_decay = epsilon_decay
 
-        self.q_table: dict[tuple, dict[int, float]] = defaultdict(dict)
+        self.seed = seed
 
-    def get_state_key(self, observation: dict[str, Any]) -> tuple:
-        """
-        Transforme l'observation en clé utilisable dans la table Q.
+        if seed is not None:
+            random.seed(seed)
 
-        Pour garder le modèle simple, on encode :
-        - le nœud courant ;
-        - la capacité restante ;
-        - le masque des clients déjà visités.
-        """
-        return (
-            observation["current_node"],
-            observation["remaining_capacity"],
-            tuple(observation["visited_mask"]),
+        # q_table[state][action] = valeur Q
+        self.q_table: Dict[State, Dict[Action, float]] = defaultdict(
+            lambda: defaultdict(float)
         )
 
-    def get_q_value(self, state_key: tuple, action: int) -> float:
+    def select_action(
+        self,
+        state: State,
+        valid_actions: List[Action],
+        greedy: bool = False,
+    ) -> Action:
         """
-        Retourne Q(state, action).
-        Si la valeur n'existe pas encore, elle vaut 0.
-        """
-        return self.q_table[state_key].get(action, 0.0)
+        Sélectionne une action avec une stratégie epsilon-greedy.
 
-    def choose_action(self, env: CVRPEnv, observation: dict[str, Any]) -> int:
+        Si greedy=True, on choisit toujours la meilleure action connue.
         """
-        Choisit une action selon une politique epsilon-greedy.
-
-        - Avec probabilité epsilon : exploration aléatoire.
-        - Sinon : exploitation de la meilleure valeur Q connue.
-
-        Si toutes les valeurs Q sont encore nulles, on utilise une règle
-        de départ proche du Nearest Neighbor pour éviter un comportement
-        totalement désordonné.
-        """
-        valid_actions = env.get_valid_actions()
 
         if not valid_actions:
-            return env.depot
+            raise ValueError("Aucune action valide disponible.")
 
-        # Exploration
-        if random.random() < self.epsilon:
+        # Exploration.
+        if not greedy and random.random() < self.epsilon:
             return random.choice(valid_actions)
 
-        state_key = self.get_state_key(observation)
+        # Exploitation.
+        q_values = self.q_table[state]
 
-        q_values = {
-            action: self.get_q_value(state_key, action)
-            for action in valid_actions
-        }
-
-        max_q = max(q_values.values())
-
+        best_value = max(q_values[action] for action in valid_actions)
         best_actions = [
-            action for action, value in q_values.items()
-            if value == max_q
+            action
+            for action in valid_actions
+            if q_values[action] == best_value
         ]
-
-        # Si toutes les valeurs sont encore à 0, on choisit le client faisable
-        # le plus proche pour stabiliser l'apprentissage.
-        if max_q == 0:
-            client_actions = [
-                action for action in valid_actions
-                if action != env.depot
-            ]
-
-            if client_actions:
-                current_node = env.current_node
-
-                return min(
-                    client_actions,
-                    key=lambda client: env.instance.distance_matrix[current_node][client],
-                )
 
         return random.choice(best_actions)
 
     def update(
         self,
-        state_key: tuple,
-        action: int,
+        state: State,
+        action: Action,
         reward: float,
-        next_state_key: tuple | None,
-        next_valid_actions: list[int],
+        next_state: State,
+        next_valid_actions: List[Action],
         done: bool,
     ) -> None:
         """
-        Met à jour Q(state, action) avec la formule du Q-learning.
-        """
-        old_q = self.get_q_value(state_key, action)
+        Met à jour la table Q selon la règle :
 
-        if done or next_state_key is None or not next_valid_actions:
-            next_max_q = 0.0
+        Q(s,a) ← Q(s,a) + α [r + γ max_a' Q(s',a') - Q(s,a)]
+        """
+
+        current_q = self.q_table[state][action]
+
+        if done or not next_valid_actions:
+            target = reward
         else:
             next_max_q = max(
-                self.get_q_value(next_state_key, next_action)
+                self.q_table[next_state][next_action]
                 for next_action in next_valid_actions
             )
+            target = reward + self.gamma * next_max_q
 
-        target = reward + self.discount_factor * next_max_q
-
-        new_q = old_q + self.learning_rate * (target - old_q)
-
-        self.q_table[state_key][action] = new_q
+        new_q = current_q + self.learning_rate * (target - current_q)
+        self.q_table[state][action] = new_q
 
     def decay_epsilon(self) -> None:
         """
-        Réduit progressivement epsilon pour passer de l'exploration
-        vers l'exploitation.
+        Réduit epsilon après un épisode.
         """
+
         self.epsilon = max(
             self.epsilon_min,
             self.epsilon * self.epsilon_decay,
         )
+
+    def reset_epsilon(self) -> None:
+        """
+        Réinitialise epsilon à sa valeur initiale.
+        """
+
+        self.epsilon = self.epsilon_start
+
+    def q_table_size(self) -> int:
+        """
+        Retourne le nombre d'états connus.
+        """
+
+        return len(self.q_table)
+
+    def to_serializable(self) -> dict:
+        """
+        Convertit la Q-table en dictionnaire sérialisable JSON.
+        """
+
+        serialized_q_table = {}
+
+        for state, action_values in self.q_table.items():
+            state_key = "|".join(map(str, state))
+            serialized_q_table[state_key] = {
+                str(action): value
+                for action, value in action_values.items()
+            }
+
+        return {
+            "learning_rate": self.learning_rate,
+            "gamma": self.gamma,
+            "epsilon": self.epsilon,
+            "epsilon_start": self.epsilon_start,
+            "epsilon_min": self.epsilon_min,
+            "epsilon_decay": self.epsilon_decay,
+            "seed": self.seed,
+            "q_table": serialized_q_table,
+        }
+
+    def save(self, output_path: str | Path) -> None:
+        """
+        Sauvegarde l'agent dans un fichier JSON.
+        """
+
+        output_path = Path(output_path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        with output_path.open("w", encoding="utf-8") as file:
+            json.dump(
+                self.to_serializable(),
+                file,
+                indent=2,
+                ensure_ascii=False,
+            )
+
+    @classmethod
+    def load(cls, input_path: str | Path) -> "QLearningAgent":
+        """
+        Recharge un agent Q-learning depuis un fichier JSON.
+        """
+
+        input_path = Path(input_path)
+
+        with input_path.open("r", encoding="utf-8") as file:
+            data = json.load(file)
+
+        agent = cls(
+            learning_rate=data["learning_rate"],
+            gamma=data["gamma"],
+            epsilon=data["epsilon"],
+            epsilon_min=data["epsilon_min"],
+            epsilon_decay=data["epsilon_decay"],
+            seed=data.get("seed"),
+        )
+
+        agent.epsilon_start = data.get("epsilon_start", data["epsilon"])
+
+        for state_key, action_values in data["q_table"].items():
+            state = tuple(int(value) for value in state_key.split("|"))
+
+            for action, q_value in action_values.items():
+                agent.q_table[state][int(action)] = float(q_value)
+
+        return agent

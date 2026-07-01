@@ -1,0 +1,25 @@
+instance,method,category,seed,cost,reference_cost,gap_percent,routes,vehicle_count,is_valid,missing_customers_count,duplicated_customers_count,capacity_violations_count,train_time_sec,inference_time_sec,postprocess_time_sec,total_time_sec,episodes,notes
+A-n32-k5,Nearest Neighbor CVRP,heuristic_baseline,,1145.0,784,46.045918367346935,5,5,True,0,0,0,0.0,0.0006518999580293894,0.0,0.0006518999580293894,,Heuristique constructive simple du plus proche voisin.
+A-n32-k5,Nearest Neighbor + 2-opt,heuristic_local_search,,1145.0,784,46.045918367346935,5,5,True,0,0,0,0.0,0.0006518999580293894,0.0005418999935500324,0.0011937999515794218,,Nearest Neighbor amélioré par 2-opt intra-route.
+A-n32-k5,Clarke & Wright Savings,heuristic_constructive,,842.0,784,7.3979591836734695,5,5,True,0,0,0,0.0,0.0028611000161617994,0.0,0.0028611000161617994,,Heuristique constructive classique basée sur les économies.
+A-n32-k5,Clarke & Wright + 2-opt,heuristic_local_search,,829.0,784,5.7397959183673475,5,5,True,0,0,0,0.0,0.0028611000161617994,0.0009109000093303621,0.0037720000254921615,,Clarke & Wright amélioré par 2-opt intra-route.
+A-n37-k5,Nearest Neighbor CVRP,heuristic_baseline,,948.0,,,5,5,True,0,0,0,0.0,0.0007987000280991197,0.0,0.0007987000280991197,,Heuristique constructive simple du plus proche voisin.
+A-n37-k5,Nearest Neighbor + 2-opt,heuristic_local_search,,927.0,,,5,5,True,0,0,0,0.0,0.0007987000280991197,0.002076099975965917,0.0028748000040650368,,Nearest Neighbor amélioré par 2-opt intra-route.
+A-n37-k5,Clarke & Wright Savings,heuristic_constructive,,705.0,,,5,5,True,0,0,0,0.0,0.0045816999627277255,0.0,0.0045816999627277255,,Heuristique constructive classique basée sur les économies.
+A-n37-k5,Clarke & Wright + 2-opt,heuristic_local_search,,693.0,,,5,5,True,0,0,0,0.0,0.0045816999627277255,0.0012534999987110496,0.005835199961438775,,Clarke & Wright amélioré par 2-opt intra-route.
+A-n39-k6,Nearest Neighbor CVRP,heuristic_baseline,,1145.0,831,37.785800240673886,6,6,True,0,0,0,0.0,0.0004167999722994864,0.0,0.0004167999722994864,,Heuristique constructive simple du plus proche voisin.
+A-n39-k6,Nearest Neighbor + 2-opt,heuristic_local_search,,1138.0,831,36.94344163658243,6,6,True,0,0,0,0.0,0.0004167999722994864,0.001103400019928813,0.0015201999922282994,,Nearest Neighbor amélioré par 2-opt intra-route.
+A-n39-k6,Clarke & Wright Savings,heuristic_constructive,,857.0,831,3.1287605294825513,6,6,True,0,0,0,0.0,0.003777500009164214,0.0,0.003777500009164214,,Heuristique constructive classique basée sur les économies.
+A-n39-k6,Clarke & Wright + 2-opt,heuristic_local_search,,855.0,831,2.888086642599278,6,6,True,0,0,0,0.0,0.003777500009164214,0.0009730999590829015,0.004750599968247116,,Clarke & Wright amélioré par 2-opt intra-route.
+A-n80-k10,Nearest Neighbor CVRP,heuristic_baseline,,2348.0,,,10,10,True,0,0,0,0.0,0.003757899976335466,0.0,0.003757899976335466,,Heuristique constructive simple du plus proche voisin.
+A-n80-k10,Nearest Neighbor + 2-opt,heuristic_local_search,,2341.0,,,10,10,True,0,0,0,0.0,0.003757899976335466,0.0033221999765373766,0.0070800999528728426,,Nearest Neighbor amélioré par 2-opt intra-route.
+A-n80-k10,Clarke & Wright Savings,heuristic_constructive,,1840.0,,,10,10,True,0,0,0,0.0,0.026662399992346764,0.0,0.026662399992346764,,Heuristique constructive classique basée sur les économies.
+A-n80-k10,Clarke & Wright + 2-opt,heuristic_local_search,,1838.0,,,10,10,True,0,0,0,0.0,0.026662399992346764,0.0020345000084489584,0.028696900000795722,,Clarke & Wright amélioré par 2-opt intra-route.
+B-n57-k7,Nearest Neighbor CVRP,heuristic_baseline,,1866.0,,,8,7,False,0,0,0,0.0,0.0016208000015467405,0.0,0.0016208000015467405,,Heuristique constructive simple du plus proche voisin.
+B-n57-k7,Nearest Neighbor + 2-opt,heuristic_local_search,,1788.0,,,8,7,False,0,0,0,0.0,0.0016208000015467405,0.003526400018017739,0.00514720001956448,,Nearest Neighbor amélioré par 2-opt intra-route.
+B-n57-k7,Clarke & Wright Savings,heuristic_constructive,,1242.0,,,8,7,False,0,0,0,0.0,0.015331400034483522,0.0,0.015331400034483522,,Heuristique constructive classique basée sur les économies.
+B-n57-k7,Clarke & Wright + 2-opt,heuristic_local_search,,1241.0,,,8,7,False,0,0,0,0.0,0.015331400034483522,0.0014329000259749591,0.01676430006045848,,Clarke & Wright amélioré par 2-opt intra-route.
+X-n101-k25,Nearest Neighbor CVRP,heuristic_baseline,,41944.0,,,26,25,False,0,0,0,0.0,0.0026331000262871385,0.0,0.0026331000262871385,,Heuristique constructive simple du plus proche voisin.
+X-n101-k25,Nearest Neighbor + 2-opt,heuristic_local_search,,41536.0,,,26,25,False,0,0,0,0.0,0.0026331000262871385,0.0009077000431716442,0.0035408000694587827,,Nearest Neighbor amélioré par 2-opt intra-route.
+X-n101-k25,Clarke & Wright Savings,heuristic_constructive,,28986.0,,,28,25,False,0,0,0,0.0,0.05544560000998899,0.0,0.05544560000998899,,Heuristique constructive classique basée sur les économies.
+X-n101-k25,Clarke & Wright + 2-opt,heuristic_local_search,,28936.0,,,28,25,False,0,0,0,0.0,0.05544560000998899,0.0011570000206120312,0.056602600030601025,,Clarke & Wright amélioré par 2-opt intra-route.
